@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form id="conversion-form">
+            <input type="number" id="amount" placeholder="Enter amount" required>
+            <select id="from-currency" required>
+                <option value="USD">US Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">British Pound (GBP)</option>
+                <option value="JPY">Japanese Yen (JPY)</option>
+                <option value="CAD">Canadian Dollar (CAD)</option>
+            </select>
+            <span id="convert-label">to</span>
+            <select id="to-currency" required>
+                <option value="USD">US Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">British Pound (GBP)</option>
+                <option value="JPY">Japanese Yen (JPY)</option>
+                <option value="CAD">Canadian Dollar (CAD)</option>
+            </select>
+            <button type="submit">Convert</button>
+        </form>
+        <p id="result-text"></p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
